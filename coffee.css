@@ -2,7 +2,7 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: whitesmoke;
   color: #000000;
 }
 
@@ -56,20 +56,21 @@ nav ul li a:hover {
 
 .hero p {
   font-size: 3.5rem;
-  margin: 1rem 0;
+  margin: 1rem;
   font-weight: bold;
   line-height: 1.1;
   text-transform: uppercase;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   font-family: "Impact", sans-serif;
 }
 
 .hero img {
-  width: 50%;
+  width: 100%;
   height: 100%;
   padding: 100px auto;
   box-shadow: black;
   object-fit: cover;
+  max-width: 320px;
 }
 
 .products-container {

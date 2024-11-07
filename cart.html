@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Bean - Cart</title>
+    <link rel="stylesheet" href="coffee.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <ul>
+          <li><a href="./coffee.html#home">Home</a></li>
+          <li><a href="./coffee.html#products">Products</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="cart">
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="cart-container">
+      <h1>Your Cart</h1>
+      <div class="cart-items">
+        <!-- <div class="cart-item">
+          <img src="goldensunrise.webp" alt="Golden Sunrise" />
+          <div class="item-details">
+            <h3>Golden Sunrise</h3>
+            <p>Price: $12.99</p>
+            <div class="quantity">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" value="1" min="1" max="10" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <div class="cart-item2">
+          <img src="signitureblend.webp" alt="Signature Blend" />
+          <div class="item-details">
+            <h3>Signature Blend</h3>
+            <p>Price: $9.99</p>
+            <div class="quantity">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" value="1" min="1" max="10" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <div class="cart-item3">
+          <img src="harvestmoon.webp" alt="Harvest Moon" />
+          <div class="item-details">
+            <h3>Signature Blend</h3>
+            <p>Price: $14.99</p>
+            <div class="quantity">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" value="1" min="1" max="10" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <div class="cart-item4">
+          <img src="indo-viet roast.webp" alt="Indo-Viet Roast" />
+          <div class="item-details">
+            <h3>Indo-Viet Roast</h3>
+            <p>Price: $18.99</p>
+            <div class="quantity">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" value="1" min="1" max="10" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      -->
+        <div class="cart-item5">
+          <img src="lazydays.webp" alt="Lazy Days" />
+          <div class="item-details">
+            <h3>Lazy Days</h3>
+            <p>Price: $11.99</p>
+            <div class="quantity">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" value="1" min="1" max="10" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+      <div class="cart-summary">
+        <h2>Cart Summary</h2>
+        <p>Total Items: 6</p>
+        <p>Total Price: $27.98</p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Coffee Bean</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const endpoint = "https://fake-coffee-api.vercel.app/api";
+      fetch(endpoint)
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+    </script>
+  </body>
+</html>
